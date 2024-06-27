@@ -8,7 +8,7 @@ if (!process.env.TURSO_CONNECTION_URL) {
 }
 
 export default defineConfig({
-	schema: './src/lib/db/schema.js',
+	schema: './src/lib/server/db/schema.js',
 	out: './drizzle/migrations',
 	dialect: 'sqlite',
 	driver: 'turso',
